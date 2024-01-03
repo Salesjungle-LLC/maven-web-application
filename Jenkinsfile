@@ -15,8 +15,7 @@ node
   
   stage("CheckOutCodeGit")
   {
-   git 'https://github.com/Salesjungle-LLC/maven-web-application.git'
- }
+  git credentialsId: 'git', url: 'https://github.com/Salesjungle-LLC/maven-web-application.git' }
  
  stage("Build")
  {
